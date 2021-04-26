@@ -134,5 +134,3 @@ const platformerPlugin = () => {
         }
     }
 };
-
-export default platformerPlugin;
