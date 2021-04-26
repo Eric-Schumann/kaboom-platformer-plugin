@@ -5,6 +5,8 @@ This plugin currently adds three components to the kaboom library.
 The first component is called playerControls and it takes an argument for velocity, which is the speed the player should move.
 It adds several properties to the player game object and a tag called 'player' to handle the logic required to move with moving platforms.
 
+playerControls also adds keyboard bindings for a, left (move left), d, right (move right), w, space, up (jump).
+
 A player with the playerControls component also requires a body and a pos component.
 
 The next two componets are for moving platforms.
