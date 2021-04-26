@@ -17,22 +17,23 @@ Platforms with the horizontal or vertical platform will be given a tag of 'platf
 A platform with the vertical or horizontal component requires a pos component.
 
 Example:
+```
+  const player = add([
+    sprite('player'),
+    pos(0, 0),
+    body(),
+    playerControls(200)
+  ]);
 
-const player = add([
-  sprite('player'),
-  pos(0, 0),
-  body(),
-  playerControls(200)
-]);
+  const horizontalPlatform = add([
+    sprite('platform'),
+    pos(width() / 2, height() / 2),
+    horizontal({ distance: 120, speed: 100 })
+  ]);
 
-const horizontalPlatform = add([
-  sprite('platform'),
-  pos(width() / 2, height() / 2),
-  horizontal({ distance: 120, speed: 100 })
-]);
-
-const verticalPlatform = add([
-  sprite('platform'),
-  pos(width() / 2, 10),
-  vertical({ distance: 120, speed: 100 })
-]);
+  const verticalPlatform = add([
+    sprite('platform'),
+    pos(width() / 2, 10),
+    vertical({ distance: 120, speed: 100 })
+  ]);
+```
