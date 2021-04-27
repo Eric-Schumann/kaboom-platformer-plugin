@@ -16,8 +16,6 @@ const platformerPlugin = () => {
                 this.rightOfCenter = false;
                 this.xOffset = 0;
                 this.yOffset = 0;
-                
-                console.log(this)
 
                 keyDown(['a', 'left'], () => {
                     this.move(-this.velocity, 0);
@@ -82,7 +80,6 @@ const platformerPlugin = () => {
             component.add = function () {
                 originX = this.pos.x;
                 this.addTag('platform');
-                this.isHorizontal = true;
             };
             component.update = function() {
                 if(moveLeft) {
@@ -112,7 +109,6 @@ const platformerPlugin = () => {
             component.add = function () {
                 originY = this.pos.y;
                 this.addTag('platform');
-                this.isVertical = true;
             };
             component.update = function() {
                 if(moveUp) {
